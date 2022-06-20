@@ -1,13 +1,260 @@
-body {
+body{
+  font-family: 'Nunito Sans', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+  background: #FAFAFA;
+  min-height: 100vh;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col{
+  display: flex;
+  flex-flow: column;
+}
+
+.block{
+  margin-top: 2rem;
+}
+
+.width{
+  width: 80%;
+}
+
+.comments{ 
+  height: 25rem;
+}
+
+.p{
+  padding: 2rem ;
+  margin-left: auto;
+  margin-left: auto;
+}
+
+select{
+  background: white;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  width: 15rem;
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 5px;
+}
+
+.pt{
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+option:first {
+  color: #999;
+}
+
+.filter-btn{
+  margin-right: 1rem;
+  display: flex;
+  width: 20%;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 30rem;
+}
+
+.filter-btn1{
+  display: flex;
+  gap: 1rem;
+  width: auto;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn{
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button:disabled{
+  background: rgb(100, 66, 66);
+  color: white;
+  cursor: not-allowed;
+}
+
+
+.form-div{
+  flex-basis: 40%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.max{
+  width: 40%;
+  margin-bottom: auto;
+}
+
+.box1, .box2{
+  width: 80%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box2{
+  margin-top: 10rem;
+}
+
+.mt{
+  margin-top: 7rem;
+}
+
+.teams{
+  width: 100%;
+}
+
+.line{
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left, .right{
+  border-top: 2px solid black;
+  width: 40%;
+}
+
+.tab {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  
+}
+
+table {
+  border: 2px solid red;
+  width: 100%;
+  height: 200px;
+}
+
+.tab-head{
+  background: red;
+  color: white;
+}
+
+.tab-body{
+  background: white;
+  color: black;
+}
+  
+th {
+  border-bottom: 1px solid white;
+}
+  
+td {
+  text-align: center;
+}
+
+@media screen  and (max-width:  750px){
+  .md{
+    display: flex;
+    flex-flow: column;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  input{
+    min-width: 100%;
+  }
+
+  .p{
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .comments{
+    width: 100%;
+  }
+
+  select{
+    background: white;
+    color: black;
+    font-size: 1rem;
+    padding: 0.1rem;
+    width: 10rem;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 5px;
+  }
+
+  option{
+    width: auto;
+  }
+
+  .first{
+    margin-top: 2rem;
+  }
+
+  .box1, .box2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab{
+    background: #FAFAFA;
+    width: 100vh;
+    min-height: 100vh;
+  }
+
+  table {
+    border: 2px solid red;
+    width: 100%;
+    height: 200px;
+    overflow-x: visible;
+  }
+  
+  .tab-head{
+    background: red;
+    color: white;
+  }
+  
+  .tab-body{
+    background: white;
+    color: black;
+  }
+    
+  th {
+    border-bottom: 1px solid white;
+  }
+    
+  td {
+    text-align: center;
+  }
 }
